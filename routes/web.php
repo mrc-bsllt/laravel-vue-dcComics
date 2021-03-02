@@ -27,4 +27,5 @@ Route::prefix("admin")
   ->name("admin.")
   ->group(function() {
     Route::resource("comics", "ComicController");
+    Route::resource("characters", "CharacterController");
   });
