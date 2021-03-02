@@ -8,8 +8,9 @@
 </head>
 <body>
   <div class="prova">
-    noooooooooooooo 
-    io faccio la vistaaaaaaaaaaaaa!!!!!
+    <header></header>
+    <main></main>
+    <footer></footer>
   </div>
   
 </body>
