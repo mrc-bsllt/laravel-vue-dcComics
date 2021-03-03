@@ -39,5 +39,7 @@ class User extends Authenticatable
 
 
     protected $timestamps = false;
- 
+
+    public $numero = 5;
+
 }
