@@ -26,7 +26,10 @@ Route::prefix("admin")
   ->middleware("auth")
   ->name("admin.")
   ->group(function() {
+
     Route::resource("comics", "ComicController");
+
     Route::resource("characters", "CharacterController");
+    
     Route::resource("categories", "CategoryController");
   });
