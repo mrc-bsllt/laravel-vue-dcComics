@@ -20,11 +20,13 @@ class CreateComicCharacterTable extends Migration
 
             $table->foreign("comic_id")
               ->references("id")
-              ->on("comics");
+              ->on("comics")
+              ->onDelete("cascade");
 
               $table->foreign("character_id")
                 ->references("id")
-                ->on("characters");
+                ->on("characters")
+                ->onDelete("cascade");
         });
     }
 

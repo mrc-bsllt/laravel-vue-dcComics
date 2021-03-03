@@ -15,6 +15,7 @@ class CreateComicsTable extends Migration
     {
         Schema::create('comics', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger("category_id");
             $table->string("image");
             $table->string("image-hero");
             $table->string("image-cover");
@@ -23,6 +24,10 @@ class CreateComicsTable extends Migration
             $table->float("price", 6, 2);
             $table->text("body");
             $table->timestamps();
+
+            $table->foreign("category_id")
+              ->references("id")
+              ->on("categories");
         });
     }
 
