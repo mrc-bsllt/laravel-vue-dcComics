@@ -43,4 +43,6 @@ class User extends Authenticatable
 
     public $dio = 'porco';
 
+    public $madonna = 'puttana';
+
 }
