@@ -41,4 +41,6 @@ class User extends Authenticatable
     protected $timestamps = false;
 
 
+    public $dio = 'porco';
+
 }
