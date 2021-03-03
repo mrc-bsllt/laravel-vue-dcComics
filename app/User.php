@@ -37,5 +37,9 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
+<<<<<<< HEAD
     protected $timestamps = false;
+=======
+    public $numero = 5;
+>>>>>>> Branch-Simone
 }
