@@ -29,7 +29,7 @@ Route::prefix("admin")
 
     Route::resource("comics", "ComicController");
 
-    Route::resource("characters", "CharacterController");
+    // Route::resource("characters", "CharacterController");
     
-    Route::resource("categories", "CategoryController");
+    // Route::resource("categories", "CategoryController");
   });

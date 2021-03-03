@@ -6,14 +6,15 @@ use Illuminate\Database\Eloquent\Model;
 
 class Character extends Model
 {
-  public function comics() {
-    protected $fillable = [
-      "name",
-      "slug",
-      "image-hero",
-      "description"
-    ];
+  protected $fillable = [
+    "name",
+    "slug",
+    "image-hero",
+    "description"
+  ];
 
+  public function comics() {
     return $this->belongsToMany("App\Comic", "comic_character");
   }
+  
 }

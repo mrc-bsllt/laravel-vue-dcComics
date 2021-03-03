@@ -5,6 +5,15 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
+/**
+ * 
+ *  ENTITY MODELS
+ */ 
+
+use App\Comic;
+use App\Character;
+use App\Category;
+
 class ComicController extends Controller
 {
     /**
@@ -14,7 +23,7 @@ class ComicController extends Controller
      */
     public function index()
     {
-        //
+        
     }
 
     /**
