@@ -18,6 +18,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -65,6 +66,13 @@
                                         @csrf
                                     </form>
                                 </div>
+                            </li>
+                            <li>
+                              @if (Auth::user()->avatar)
+                                <a href="#"><img class="avatar_img" src="{{ asset("storage/" . Auth::user()->avatar) }}" alt="user-avatar"></a>
+                              @else
+                                <a href="#"><img class="avatar_img" src="{{ asset("img\user-avatar-default.png") }}" alt="user-avatar-default"></a>
+                              @endif
                             </li>
                         @endguest
                     </ul>
