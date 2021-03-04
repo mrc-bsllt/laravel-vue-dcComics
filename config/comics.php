@@ -90,24 +90,24 @@ $comics = [
         'price' => 4.99,
         'body' => '<p>Gotham City’s elusive serial killer, the Starlet, and her mysterious benefactor reach the pinnacle of their power, terrorizing the city and teasing the GCPD with strange clues and a famous new victim. Harley goes rogue and hunts down a shocking major lead in the case, but her ruthless style backfires and she puts herself at the mercy of Commissioner Montoya for a shot at redemption. When FBI Agent Hector Quimby becomes an ally in a crucial moment, he and Harley forge a partnership that will soon take them down a familiar and ominous road.</p>'
     ],
-    [
-        'id' => 110,
-        'image' => 'https://www.dccomics.com/sites/default/files/styles/current_series_grid_item192x192/public/series-covers/2020/11/SeriesThumb7_EndlessWinterBlackAdam_5fc5a3ff5f95f5.48546934.jpg?itok=FqBdK0FB',
-        'image-hero' => 'https://www.dccomics.com/sites/default/files/BLACK%20ADAM%20ENDLESS%20WINTER%20SPEC%201_5fd28a99baa9b8.81772468.jpg',
-        'image-cover' => 'https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2020/12/BLKADMS_EWS_01_300-001_HD_5fd264622e8309.50154731.jpg?itok=tQY2n9OP',
-        'title' => 'BLACK ADAM: ENDLESS WINTER SPECIAL',
-        'price' => 3.99,
-        'body' => '<p>“Endless Winter” chapter eight! Seeking to bolster his nation’s place in the world, Black Adam arrives in Gotham City demanding action to end the threat causing an endless winter across the globe. But Black Adam isn’t telling the world’s leaders everything-especially not that he’s faced the mysterious Frost King before and won. Find out what Adam’s hiding in the penultimate chapter of “Endless Winter.”</p>'
-    ],
-    [
-        'id' => 111,
-        'image' => 'https://www.dccomics.com/sites/default/files/styles/current_series_grid_item192x192/public/series-covers/2018/06/SeriesThumb5_catwoman_5b1ec42eec63e2.07910716.jpg?itok=EJyrm6sv',
-        'image-hero' => 'https://www.dccomics.com/sites/default/files/Comics_Gallery_20180704__CATWOMAN_%231_Cover_Wedding_Dress_5b19813dd8f9a8.07657512.jpg',
-        'image-cover' => 'https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/08/CATW_01_300-001_HD_5b7f28f98425a9.00783133.jpg?itok=KoHjT_to',
-        'title' => 'CATWOMAN',
-        'price' => 3.99,
-        'body' => '<p>The wedding night’s barely over, but Catwoman’s back on the streets, this time to expose a copycat who’s pulling heists around Gotham City. As Selina cracks the whip on her former criminal cohorts, she’s attracting unwanted attention from one of Gotham’s most dangerous groups. The mob? Nope. Try the GCPD. And as if the Bat-Bride didn’t have enough problems, don’t miss the debut of an all-new villain determined to make trouble for all nine of Selina’s lives. Don’t miss the start of an all-new monthly series written and illustrated by Eisner Award-nominee Joëlle Jones!</p>'
-    ],
+    // [
+    //     'id' => 110,
+    //     'image' => 'https://www.dccomics.com/sites/default/files/styles/current_series_grid_item192x192/public/series-covers/2020/11/SeriesThumb7_EndlessWinterBlackAdam_5fc5a3ff5f95f5.48546934.jpg?itok=FqBdK0FB',
+    //     'image-hero' => 'https://www.dccomics.com/sites/default/files/BLACK%20ADAM%20ENDLESS%20WINTER%20SPEC%201_5fd28a99baa9b8.81772468.jpg',
+    //     'image-cover' => 'https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2020/12/BLKADMS_EWS_01_300-001_HD_5fd264622e8309.50154731.jpg?itok=tQY2n9OP',
+    //     'title' => 'BLACK ADAM: ENDLESS WINTER SPECIAL',
+    //     'price' => 3.99,
+    //     'body' => '<p>“Endless Winter” chapter eight! Seeking to bolster his nation’s place in the world, Black Adam arrives in Gotham City demanding action to end the threat causing an endless winter across the globe. But Black Adam isn’t telling the world’s leaders everything-especially not that he’s faced the mysterious Frost King before and won. Find out what Adam’s hiding in the penultimate chapter of “Endless Winter.”</p>'
+    // ],
+    // [
+    //     'id' => 111,
+    //     'image' => 'https://www.dccomics.com/sites/default/files/styles/current_series_grid_item192x192/public/series-covers/2018/06/SeriesThumb5_catwoman_5b1ec42eec63e2.07910716.jpg?itok=EJyrm6sv',
+    //     'image-hero' => 'https://www.dccomics.com/sites/default/files/Comics_Gallery_20180704__CATWOMAN_%231_Cover_Wedding_Dress_5b19813dd8f9a8.07657512.jpg',
+    //     'image-cover' => 'https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/08/CATW_01_300-001_HD_5b7f28f98425a9.00783133.jpg?itok=KoHjT_to',
+    //     'title' => 'CATWOMAN',
+    //     'price' => 3.99,
+    //     'body' => '<p>The wedding night’s barely over, but Catwoman’s back on the streets, this time to expose a copycat who’s pulling heists around Gotham City. As Selina cracks the whip on her former criminal cohorts, she’s attracting unwanted attention from one of Gotham’s most dangerous groups. The mob? Nope. Try the GCPD. And as if the Bat-Bride didn’t have enough problems, don’t miss the debut of an all-new villain determined to make trouble for all nine of Selina’s lives. Don’t miss the start of an all-new monthly series written and illustrated by Eisner Award-nominee Joëlle Jones!</p>'
+    // ],
 ];
 
 return $comics;
