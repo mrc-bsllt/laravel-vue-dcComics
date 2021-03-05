@@ -1,11 +1,11 @@
-@extends('layouts.app')
+@extends('layouts.main-admin')
 
 @section('content')
-    
+
     <div class="container">
 
         <form action="{{ route('admin.comics.update'),$comic->id }}" method="post">
-    
+
             @csrf
             @method('PUT')
 
