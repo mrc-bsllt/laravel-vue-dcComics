@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layouts.main');
 });
 
 Auth::routes();
@@ -30,6 +30,6 @@ Route::prefix("admin")
     Route::resource("comics", "ComicController");
 
     // Route::resource("characters", "CharacterController");
-    
+
     // Route::resource("categories", "CategoryController");
   });

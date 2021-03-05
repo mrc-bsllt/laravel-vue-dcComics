@@ -1,5 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
 .avatar_img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: $black;
+
+  &:hover {
+    text-decoration: none;
+    color: $blue;
+  }
 }
