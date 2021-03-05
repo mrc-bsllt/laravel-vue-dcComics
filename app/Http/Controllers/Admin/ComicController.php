@@ -6,9 +6,9 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 /**
- * 
+ *
  *  ENTITY MODELS
- */ 
+ */
 
 use App\Comic;
 use App\Character;
@@ -23,7 +23,7 @@ class ComicController extends Controller
      */
     public function index()
     {
-        
+      return view("admin.comics.index");
     }
 
     /**

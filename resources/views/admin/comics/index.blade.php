@@ -1,10 +1,7 @@
-@extends('layouts.app')
+@extends('layouts.main')
 
 @section('contet')
     <div class="container">
-        <table>
-            <thead></thead>
-            <tbody></tbody>
-        </table>
+      <h1>ciao</h1>
     </div>
 @endsection
