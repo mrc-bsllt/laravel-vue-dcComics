@@ -20,7 +20,6 @@ class ComicsTableSeeder extends Seeder
         $newComic = new Comic();
 
         $newComic->slug = Str::slug($comic["title"]);
-        $newComic->category_id = $faker->numberBetween(1, 2);
         $newComic->fill($comic)->save();
 
       }
