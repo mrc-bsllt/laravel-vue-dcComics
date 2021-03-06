@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 
 /**
  *
@@ -16,6 +18,16 @@ use App\Category;
 
 class ComicController extends Controller
 {
+
+    private $comicValidation = [
+        'title' => 'required|max:100',
+        'price' => 'required|numeric',
+        'body' => 'required',
+        'image' => 'required|image',
+        'image-hero' => 'required|image',
+        'image-cover' => 'required|image'
+    ];
+
     /**
      * Display a listing of the resource.
      *
@@ -35,7 +47,8 @@ class ComicController extends Controller
      */
     public function create()
     {
-        //
+        $categories = Category::all();
+        return view('admin.comics.create', compact('categories'));
     }
 
     /**
@@ -46,7 +59,21 @@ class ComicController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->all();
+
+        $request->validate($this->comicValidation);
+
+        $comic = new Comic();
+        $comic->category_id = $data['category'];
+        $comic->slug = Str::slug($data['title']);
+        $data['image'] = Storage::disk('public')->put('images', $data['image']);
+        $data['image-hero'] = Storage::disk('public')->put('images', $data['image-hero']);
+        $data['image-cover'] = Storage::disk('public')->put('images', $data['image-cover']);
+        $comic->fill($data);
+        $comic->save();
+
+        return redirect()->route('admin.comics.index')->with('success','Comic '.$comic->title.' created successfuly');
+
     }
 
     /**

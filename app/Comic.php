@@ -13,7 +13,8 @@ class Comic extends Model
     "title",
     "slug",
     "price",
-    "body"
+    "body",
+    "category_id"
   ];
 
   public function characters() {
