@@ -7,7 +7,7 @@
               {{session('success')}}
             </div>
         @endif
-     
+
       <a href="{{ route('admin.comics.create') }}" class="btn btn-lg btn-primary mt-4">New comic</a>
 
       <table class="table table-striped table-bordered mt-4">

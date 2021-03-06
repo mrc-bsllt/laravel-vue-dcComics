@@ -96,7 +96,8 @@ class ComicController extends Controller
      */
     public function edit(Comic $comic)
     {
-      return view("admin.comics.edit", compact("comic"));
+      $categories = Category::all();
+      return view("admin.comics.edit", compact("comic", "categories"));
     }
 
     /**
@@ -106,9 +107,36 @@ class ComicController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Comic $comic)
     {
-        //
+      $this->comicValidation["image"] = "image";
+      $this->comicValidation["image-hero"] = "image";
+      $this->comicValidation["image-cover"] = "image";
+
+      $request->validate($this->comicValidation);
+      $data = $request->all();
+
+      $data["slug"] = Str::slug($data["title"]);
+      $comic->category_id = $data["category"];
+
+      if (!empty($data["image"])) {
+        Storage::disk('public')->delete($comic->image);
+        $data["image"] = Storage::disk("public")->put("images", $data["image"]);
+      }
+
+      if (!empty($data["image-hero"])) {
+        Storage::disk('public')->delete($comic->{"image-hero"});
+        $data["image-hero"] = Storage::disk("public")->put("images", $data["image-hero"]);
+      }
+
+      if (!empty($data["image-cover"])) {
+        Storage::disk('public')->delete($comic->{"image-cover"});
+        $data["image-cover"] = Storage::disk("public")->put("images", $data["image-cover"]);
+      }
+
+      $comic->update($data);
+
+      return redirect()->route("admin.comics.index")->with('success','Comic '.$comic->title.' edited successfuly');
     }
 
     /**
