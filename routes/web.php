@@ -13,8 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('layouts.main-admin');
+// Route::get('/', function () {
+//     return view('layouts.main-admin');
+// });
+Route::get('/test', function () {
+    return view('test');
 });
 
 Auth::routes();
